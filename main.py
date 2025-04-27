@@ -63,6 +63,9 @@ class Quiz(BaseModel):                                                          
 
         def explain(self):
             if self.explanation == '':
+                width = os.get_terminal_size().columns
+
+
                 print("\t[I] Generating explanation...")
                 with open("api_key.txt", "r") as f:
                     api_key = f.read().strip()
@@ -70,8 +73,8 @@ class Quiz(BaseModel):                                                          
 
                 response = client.models.generate_content(
                     model="gemini-2.0-flash",
-                    contents=f"Explain how to solve the following question: {self.question_text} and where the user might have gone wrong with their answer: {self.user_answer},"
-                              f" Keep the explanation short and simple, and do not use any latex or unicode characters that cannot be printed to a terminal and do not use markdown",
+                    contents=f"Explain how to solve the following question: {self.question_text} and where the user might have gone wrong with their answer: {self.user_answer}, also ensure that if any sentence goes over {width} characters, it is split into multiple lines. "
+                              f" Keep the explanation short and simple, and do not use any latex or unicode characters that cannot be printed to a terminal and do not use markdown. The maximum length of text on one line should be {width} characters. ",
                 )
 
                 self.explanation = response.text
@@ -89,6 +92,8 @@ class Quiz(BaseModel):                                                          
                 print("\t[I] Explanation already generated.")
                 print("\t[I] Explanation: ")
                 centered_question(self.explanation)
+
+            centered_question("Press enter to continue to the next question...")
 
         def get_question_answer(self) -> bool:                          # Function for getting the answer from the user
             if self.user_answer == '':
