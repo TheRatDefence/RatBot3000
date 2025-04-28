@@ -73,8 +73,8 @@ class Quiz(BaseModel):                                                          
 
                 response = client.models.generate_content(
                     model="gemini-2.0-flash",
-                    contents=f"Explain how to solve the following question: {self.question_text} and where the user might have gone wrong with their answer: {self.user_answer}, also ensure that if any sentence goes over {width} characters, it is split into multiple lines. "
-                              f" Keep the explanation short and simple, and do not use any latex or unicode characters that cannot be printed to a terminal and do not use markdown. The maximum length of text on one line should be {width} characters. ",
+                    contents=f"Explain how to solve the following question: {self.question_text} and where the user might have gone wrong with their answer: {self.user_answer}, also ensure that if any sentence goes over {width/2} characters, it is split into multiple lines. "
+                              f" Keep the explanation short and simple, and do not use any latex or unicode characters that cannot be printed to a terminal and do not use markdown. The maximum length of text on one line should be {width/2} characters. ",
                 )
 
                 self.explanation = response.text
@@ -135,6 +135,7 @@ def create_quiz(number: int, prompt: str):                                      
 
     print("\t[I] Generating quiz...")
 
+    width = os.get_terminal_size().columns
 
     try:
         response = client.models.generate_content(
@@ -142,7 +143,9 @@ def create_quiz(number: int, prompt: str):                                      
             contents=f"Generate a math's quiz with {number} questions on the topic of {prompt}. "
                      f"The questions must follow the A B C D structure and be sensible choices. "
                      f"Ensure that there is only 1 correct answer and that it is correct. "
-                     f"Do not display the math questions in latex, only unicode characters that can be printed to a terminal",
+                     f"Do not display the math questions in latex, only unicode characters that can be printed to a terminal"
+                     f"also ensure that if any sentence goes over {width/2} characters, it is split into multiple lines, the maximum"
+                     f"length of a line is {width/2} characters.",
             config={
                 'response_mime_type': 'application/json',
                 'response_schema': Quiz,
