@@ -5,7 +5,7 @@ from pydantic import BaseModel
 from pydantic import Field
 import pickle
 
-class Quiz(BaseModel):                                                              # The quiz object/class which is used by gemini to create a structured output
+class Quiz(BaseModel):                                                # The quiz object/class which is used by gemini to create a structured output
     quiz_prompt: str = Field(description="The prompt used to generate the quiz")
     class Question(BaseModel):
         class Answer(BaseModel):
@@ -24,7 +24,7 @@ class Quiz(BaseModel):                                                          
 
     pre_questions: list[Question] = Field(description="The list of questions")
 
-    class FormatedQuestion:                                           # The class used to generate usable questions from the quiz object
+    class FormatedQuestion:                                            # The class used to generate usable questions from the quiz object
         counter = 0
         def __init__(self, pre_question):
             self.wrong_answers = {}
@@ -48,7 +48,7 @@ class Quiz(BaseModel):                                                          
 
             Quiz.FormatedQuestion.counter += 1
 
-        def print(self):                                               # Function for printing out each question
+        def print(self):                                                # Function for printing out each question
             boxed_text("", True)
             boxed_text(" ", False)
             boxed_text(f"[Q{self.number + 1}] {self.question_text}...", False)
@@ -65,6 +65,36 @@ class Quiz(BaseModel):                                                          
             if self.explanation == '':
                 width = os.get_terminal_size().columns
 
+                extention_math_outcomes = """Objective Students:  develop efficient strategies to solve problems using pattern recognition, generalisation, proof and modelling techniques 
+                Year 10 Mathematics Extension 1 outcomes A student:
+                ME10-1 uses algebraic and graphical concepts in the modelling and solving of problems involving functions and their inverses
+                Year 11 Mathematics Extension 1 outcomes A student:  ME12-1 applies techniques involving proof or calculus to model and solve problems 
+
+
+                Mathematics Extension 0 Stage 6 Syllabus (2017) 18 Objective Students: develop the ability to use concepts and skills and apply complex techniques to the solution of problems and modelling in the areas of trigonometry, functions, calculus, proof, vectors and statistical analysis 
+
+                Year 10 Mathematics Extension 1 outcomes A student: 
+                ME10-2 manipulates algebraic expressions and graphical functions to solve problems 
+                ME10-3 applies concepts and techniques of inverse trigonometric functions and simplifying expressions involving compound angles in the solution of problems
+                ME10-4 applies understanding of the concept of a derivative in the solution of problems, including rates of change, exponential growth and decay and related rates of change 
+                ME10-5 uses concepts of permutations and combinations to solve problems involving counting or ordering
+
+                Year 11 Mathematics Extension 1 outcomes A student: ME12-2 applies concepts and techniques involving vectors and projectiles to solve problems
+                ME11-3 applies advanced concepts and techniques in simplifying expressions involving compound angles and solving trigonometric equations ME12-4 uses calculus in the solution of applied problems, including differential equations and volumes of solids of revolution  ME12-5 applies appropriate statistical processes to present, analyse and interpret data 
+
+
+                Objective Students: use technology effectively and apply critical thinking to recognise appropriate times for such use 
+                Year 10 Mathematics Extension 1 outcomes A student:
+                ME10-6 uses appropriate technology to investigate, organise and interpret information to solve problems in a range of contexts
+                Year 11 Mathematics Extension 1 outcomes A student:  ME12-6 chooses and uses appropriate technology to solve problems in a range of contexts
+
+                Mathematics Extension 0 Stage 6 Syllabus (2017) 19 Objective Students:
+                develop the ability to interpret, justify and communicate mathematics in a variety of forms 
+
+                Year 10 Mathematics Extension 1 outcomes A student: 
+                ME10-7 communicates making comprehensive use of mathematical language, notation, diagrams and graphs
+                Year 11 Mathematics Extension 1 outcomes A student:  
+                ME11-7 evaluates and justifies conclusions, communicating a position clearly in appropriate mathematical forms"""
 
                 print("\t[I] Generating explanation...")
                 with open("api_key.txt", "r") as f:
@@ -74,7 +104,10 @@ class Quiz(BaseModel):                                                          
                 response = client.models.generate_content(
                     model="gemini-2.0-flash",
                     contents=f"Explain how to solve the following question: {self.question_text} and where the user might have gone wrong with their answer: {self.user_answer}, also ensure that if any sentence goes over {width/2} characters, it is split into multiple lines. "
-                              f" Keep the explanation short and simple, and do not use any latex or unicode characters that cannot be printed to a terminal and do not use markdown. The maximum length of text on one line should be {width/2} characters. ",
+                              f" Keep the explanation short and simple, and do not use any latex or unicode characters that cannot be printed to a"
+                              f" terminal and do not use markdown. The maximum length of text on one line should be {width/2} characters. Ensure that "
+                              f"the quiz and questions help the user learn and achieve at least one of these outcomes: {extention_math_outcomes} "
+                              f"Make sure that the outcome name is also included in the question to help the user identify the outcome they were learning.",
                 )
 
                 self.explanation = response.text
@@ -95,7 +128,7 @@ class Quiz(BaseModel):                                                          
 
             centered_question("Press enter to continue to the next question...")
 
-        def get_question_answer(self) -> bool:                          # Function for getting the answer from the user
+        def get_question_answer(self) -> bool:                           # Function for getting the answer from the user
             if self.user_answer == '':
                 self.print()
 
@@ -112,19 +145,19 @@ class Quiz(BaseModel):                                                          
 
 
 
-        def is_correct_answer(self):                                     # Function for checking if the answer is correct
+        def is_correct_answer(self):                                      # Function for checking if the answer is correct
             if self.user_answer in self.right_answer.keys():
                 return True
             else:
                 return False
 
-    def format(self):                                                    # Function which converts Quiz.Question objects to Quiz.FomatedQuestion objects
+    def format(self):                                                     # Function which converts Quiz.Question objects to Quiz.FomatedQuestion objects
         formated_questions = []
         for question in self.pre_questions:
             formated_questions.append(self.FormatedQuestion(question))
         return formated_questions
 
-def create_quiz(number: int, prompt: str):                                           # The function which generates the quiz using the gemini API
+def create_quiz(number: int, prompt: str):                                # The function which generates the quiz using the gemini API
     try:
         with open("api_key.txt", "r") as f:
             api_key = f.read().strip()
@@ -137,15 +170,47 @@ def create_quiz(number: int, prompt: str):                                      
 
     width = os.get_terminal_size().columns
 
+    extention_math_outcomes = """Objective Students:  develop efficient strategies to solve problems using pattern recognition, generalisation, proof and modelling techniques 
+    Year 10 Mathematics Extension 1 outcomes A student:
+    ME10-1 uses algebraic and graphical concepts in the modelling and solving of problems involving functions and their inverses
+    Year 11 Mathematics Extension 1 outcomes A student:  ME12-1 applies techniques involving proof or calculus to model and solve problems 
+
+
+    Mathematics Extension 0 Stage 6 Syllabus (2017) 18 Objective Students: develop the ability to use concepts and skills and apply complex techniques to the solution of problems and modelling in the areas of trigonometry, functions, calculus, proof, vectors and statistical analysis 
+
+    Year 10 Mathematics Extension 1 outcomes A student: 
+    ME10-2 manipulates algebraic expressions and graphical functions to solve problems 
+    ME10-3 applies concepts and techniques of inverse trigonometric functions and simplifying expressions involving compound angles in the solution of problems
+    ME10-4 applies understanding of the concept of a derivative in the solution of problems, including rates of change, exponential growth and decay and related rates of change 
+    ME10-5 uses concepts of permutations and combinations to solve problems involving counting or ordering
+
+    Year 11 Mathematics Extension 1 outcomes A student: ME12-2 applies concepts and techniques involving vectors and projectiles to solve problems
+    ME11-3 applies advanced concepts and techniques in simplifying expressions involving compound angles and solving trigonometric equations ME12-4 uses calculus in the solution of applied problems, including differential equations and volumes of solids of revolution  ME12-5 applies appropriate statistical processes to present, analyse and interpret data 
+
+
+    Objective Students: use technology effectively and apply critical thinking to recognise appropriate times for such use 
+    Year 10 Mathematics Extension 1 outcomes A student:
+    ME10-6 uses appropriate technology to investigate, organise and interpret information to solve problems in a range of contexts
+    Year 11 Mathematics Extension 1 outcomes A student:  ME12-6 chooses and uses appropriate technology to solve problems in a range of contexts
+
+    Mathematics Extension 0 Stage 6 Syllabus (2017) 19 Objective Students:
+    develop the ability to interpret, justify and communicate mathematics in a variety of forms 
+
+    Year 10 Mathematics Extension 1 outcomes A student: 
+    ME10-7 communicates making comprehensive use of mathematical language, notation, diagrams and graphs
+    Year 11 Mathematics Extension 1 outcomes A student:  
+    ME11-7 evaluates and justifies conclusions, communicating a position clearly in appropriate mathematical forms"""
+
     try:
         response = client.models.generate_content(
             model="gemini-2.0-flash",
-            contents=f"Generate a math's quiz with {number} questions on the topic of {prompt}. "
+            contents=f"Generate a math's quiz that follows the course outcomes with {number} questions on the topic of {prompt}. "
                      f"The questions must follow the A B C D structure and be sensible choices. "
                      f"Ensure that there is only 1 correct answer and that it is correct. "
                      f"Do not display the math questions in latex, only unicode characters that can be printed to a terminal"
                      f"also ensure that if any sentence goes over {width/2} characters, it is split into multiple lines, the maximum"
-                     f"length of a line is {width/2} characters.",
+                     f"length of a line is {width/2} characters. Ensure that the quiz and questions help the user learn and achieve at least one of these outcomes: {extention_math_outcomes} "
+                     f"Make sure that the outcome name is also included in the question to help the user identify the outcome they were learning.",
             config={
                 'response_mime_type': 'application/json',
                 'response_schema': Quiz,
@@ -160,6 +225,7 @@ def update_quiz(quiz):                                                    # Func
     with open("quiz.pkl", "wb") as f:
         pickle.dump(quiz, f)
         print("\t[I] Quiz updated and saved to quiz.pkl")
+
 
 def centered_question(question) -> bool:                                  # Utility function for centering the question in the terminal
     width = os.get_terminal_size().columns
@@ -196,7 +262,7 @@ def boxed_text(text: str, line: bool):                                    # Util
         print(" " * qwidth + "-" * hwidth + " " * qwidth)
 
 
-def display_quiz(questions):                                                    # Function which displays the quiz and checks the answers
+def display_quiz(questions):                                              # Function which displays the quiz and checks the answers
     correct_answers = 0
 
     clear_screen()
@@ -224,7 +290,7 @@ def display_quiz(questions):                                                    
     print("\t[I] Ending program!")
 
 
-def main():                                                                # Main function which runs the program
+def main():                                                               # Main function which runs the program
     clear_screen()
     if centered_question("Would you like to create a new quiz? (y/n): "):
         try:
