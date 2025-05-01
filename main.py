@@ -32,17 +32,17 @@ class Quiz(BaseModel):                                                # The quiz
             self.right_answer = {} # Dict of all right answers (just 1)
             self.answers = {} # Dict of all answers
             self.question_text = pre_question.question.replace('\n', '') # The question text that is being asked of the user
-            self.user_answer = '' # The string
-            self.number = Quiz.FormatedQuestion.counter
-            self.explanation = ''
+            self.user_answer = '' # The letter the user inputs as their answer
+            self.number = Quiz.FormatedQuestion.counter # The number of the question
+            self.explanation = '' # The generated explanation of the question
             
-            for i in range(4):
-                letter = str(pre_question.answers[i].letter.value)
-                answer = str(pre_question.answers[i].answer)
+            for i in range(4):                                          # Loops 4 times
+                letter = str(pre_question.answers[i].letter.value)      # Gets the letter from the answer object
+                answer = str(pre_question.answers[i].answer)            # Gets the answer from the answer object
 
-                self.answers.update({letter: answer})
+                self.answers.update({letter: answer})                   # Appends the letter and answer to the answers dict
 
-                if letter != str(pre_question.correct_answer.value):
+                if letter != str(pre_question.correct_answer.value):    # Sorts the letter: answer dict entry into the right or wrong answer dict
                     self.wrong_answers.update({letter: answer})
                 else:
                     self.right_answer.update({letter: answer})
@@ -99,11 +99,11 @@ class Quiz(BaseModel):                                                # The quiz
                 ME11-7 evaluates and justifies conclusions, communicating a position clearly in appropriate mathematical forms"""
 
                 print("\t[I] Generating explanation...")
-                with open("api_key.txt", "r") as f:
+                with open("api_key.txt", "r") as f:         # Get the API key from the file
                     api_key = f.read().strip()
                 client = genai.Client(api_key=api_key)
 
-                response = client.models.generate_content(
+                response = client.models.generate_content(   # Generate the explanation using the gemini API
                     model="gemini-2.0-flash",
                     contents=f"Explain how to solve the following question: {self.question_text} and where the user might have gone wrong with their answer: {self.user_answer}, also ensure that if any sentence goes over {width/2} characters, it is split into multiple lines. "
                               f" Keep the explanation short and simple, and do not use any latex or unicode characters that cannot be printed to a terminal and do not use markdown."
@@ -111,12 +111,12 @@ class Quiz(BaseModel):                                                # The quiz
                               f" Make sure that the outcome name is also included in the question to help the user identify the outcome they were learning.",
                 )
 
-                self.explanation = response.text
+                self.explanation = response.text            # Assigning the response to the explanation variable
                 print("\t[I] Explanation: ")
 
                 boxed_text("", True)
                 boxed_text(" ", False)
-                boxed_text(self.explanation, False)
+                boxed_text(self.explanation, False)         # Display the explanation
                 boxed_text(" ", False)
                 boxed_text("", True)
 
@@ -129,15 +129,15 @@ class Quiz(BaseModel):                                                # The quiz
 
         def get_question_answer(self) -> bool:                           # Function for getting the answer from the user
             if self.user_answer == '':
-                self.print()
+                self.print()                                                              # Display the question
 
-                user_input = multichoice_question("The answer is... (A/B/C/D): ")
+                user_input = multichoice_question("The answer is... (A/B/C/D): ")         # Ask the user for input
 
-                while not user_input in self.answers.keys():
+                while not user_input in self.answers.keys():                              # Check if the input is valid
                     print("\t[E] Invalid answer. Please try again.")
                     user_input = multichoice_question("The answer is... (A/B/C/D): ")
 
-                self.user_answer = user_input
+                self.user_answer = user_input                                             # Assign user input to the user_answer variable
                 clear_screen()
                 return True
             return False
@@ -150,7 +150,7 @@ class Quiz(BaseModel):                                                # The quiz
             else:
                 return False
 
-    def format(self):                                                     # Function which converts Quiz.Question objects to Quiz.FomatedQuestion objects
+    def format(self):                                                     # Function which converts Quiz.Question objects to Quiz.FormatedQuestion objects
         formated_questions = []
         for question in self.pre_questions:
             formated_questions.append(self.FormatedQuestion(question))
@@ -158,7 +158,7 @@ class Quiz(BaseModel):                                                # The quiz
 
 def create_quiz(number: int, prompt: str):                                # The function which generates the quiz using the gemini API
     try:
-        with open("api_key.txt", "r") as f:
+        with open("api_key.txt", "r") as f:                     #Attempt to load the API key from the file
             api_key = f.read().strip()
         client = genai.Client(api_key=api_key)
     except:
@@ -198,7 +198,7 @@ def create_quiz(number: int, prompt: str):                                # The 
     Year 11 Mathematics Extension 1 outcomes A student:  
     ME11-7 evaluates and justifies conclusions, communicating a position clearly in appropriate mathematical forms"""
 
-    try:
+    try:                                                          # Attempt to generate the quiz using the gemini API
         response = client.models.generate_content(
             model="gemini-2.0-flash",
             contents=f"Generate a math's quiz that follows the course outcomes with {number} questions on the topic of {prompt}. "
@@ -213,7 +213,7 @@ def create_quiz(number: int, prompt: str):                                # The 
             },
         )
         return response.parsed.format()
-    except:
+    except:                                                         # If the gemini API fails to generate the quiz, it's due to the API key being invalid
         print("\t[E] Invalid API key. Please try again.")
         return False
 
@@ -267,63 +267,63 @@ def display_quiz(questions):                                              # Func
 
     clear_screen()
 
-    for question in questions:
-        if question.get_question_answer():
-            update_quiz(questions)
-        if question.is_correct_answer():
-            correct_answers += 1
+    for question in questions:                                   # Loop through each question
+        if question.get_question_answer():                       # Get the answer from the user
+            update_quiz(questions)                               # Update the quiz object in the file
+        if question.is_correct_answer():                         # Check if the answer is correct
+            correct_answers += 1                                 # Increment the correct answers counter
 
     clear_screen()
 
     print("[I]\tChecking answers...")
     centered_question(f"You got {correct_answers} out of {len(questions)} questions correct.")
-    if correct_answers != len(questions):
+    if correct_answers != len(questions): # Check if the user got all questions correct
         if centered_question("Would you like to see the questions you got wrong? (y/n): "):
-            for question in questions:
-                if not question.is_correct_answer():
+            for question in questions: # Loop through each question again
+                if not question.is_correct_answer(): # Check if the answer is incorrect
                     clear_screen()
-                    question.print()
-                    centered_question(f"Your answer: {question.user_answer} -> {question.answers[question.user_answer]}")
-                    centered_question(f"Correct answer: {list(question.right_answer.keys())[0]} -> {list(question.right_answer.values())[0]}")
+                    question.print()                                                                                                           # Display the question
+                    centered_question(f"Your answer: {question.user_answer} -> {question.answers[question.user_answer]}")                      # Display the user's answer
+                    centered_question(f"Correct answer: {list(question.right_answer.keys())[0]} -> {list(question.right_answer.values())[0]}") # Display the correct answer
                     if centered_question("Would you like to see an explanation? (y/n): "):
-                        question.explain()
+                        question.explain()                                                                                                     # Use the explain function to generate an explanation of how to solve the question
     print("\t[I] Ending program!")
 
 
-def main():                                                               # Main function which runs the program
+def main():                                                               # Main function which acts like the main menu
     clear_screen()
     if centered_question("Would you like to create a new quiz? (y/n): "):
         try:
-            number = int(multichoice_question("Enter an amount of questions: ").lower())
+            number = int(multichoice_question("Enter an amount of questions: ").lower()) # Attempt to get the number of questions from the user as int
         except:
             print("\t[E] Invalid input. Please enter a number.")
             return False
 
         try:
-            topic = multichoice_question("Enter a maths topic: ").lower()
+            topic = multichoice_question("Enter a maths topic: ").lower() # Attempt to get the topic from the user as string and convert it to lowercase
         except:
             print("\t[E] Invalid input. Please enter a topic.")
             return False
 
 
-        quiz = create_quiz(number, topic)
-        if not quiz:
+        quiz = create_quiz(number, topic) # Create the quiz using the create_quiz function
+        if not quiz: # Check if the quiz was created successfully
             print("\t[E] Quiz generation failed. Please try again.")
             return False
-        with open("quiz.pkl", "wb") as f:
+        with open("quiz.pkl", "wb") as f: #Save the quiz object to file
             pickle.dump(quiz, f)
         print("\t[I] Quiz created and saved to quiz.pkl")
 
     else:
         try:
-            with open("quiz.pkl", "rb") as f:
+            with open("quiz.pkl", "rb") as f: # Attempt to load the quiz from the file
                 quiz = pickle.load(f)
                 print("\t[I] Quiz loaded from quiz.pkl")
         except:
             print("\t[E] No quiz found. Please create a new quiz.")
             return False
 
-    if centered_question("Start quiz? (y/n): "):
+    if centered_question("Start quiz? (y/n): "): # The user is asked if they want to start the quiz
         display_quiz(quiz)
     else:
         return False
@@ -331,7 +331,7 @@ def main():                                                               # Main
 
 if __name__=="__main__":
     while not main():
-        if str(input("\n" * 2 + "Restart program? (y/n): ")).lower() == "y":
+        if str(input("\n" * 2 + "Restart program? (y/n): ")).lower() == "y": # Everytime main() returns false, the user is asked if they want to restart the program
             print("Restarting program...")
             main()
         else:
