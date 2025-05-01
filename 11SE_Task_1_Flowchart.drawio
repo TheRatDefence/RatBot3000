@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 OPR/117.0.0.0" version="26.2.14">
   <diagram name="Page-1" id="ceasmn53cf6w5XKabNw4">
-    <mxGraphModel dx="3949" dy="2260" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2336" pageHeight="1654" background="#ffffff" math="0" shadow="0">
+    <mxGraphModel dx="3949" dy="2260" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1654" background="#ffffff" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -8,44 +8,44 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-1" value="Start" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;" parent="1" vertex="1">
-          <mxGeometry x="408.83000000000004" y="80" width="120" height="60" as="geometry" />
+          <mxGeometry x="383.55000000000007" y="35" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;" parent="1" source="5EhukW0RqnBsrfUFgMam-9" target="5EhukW0RqnBsrfUFgMam-6" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-4" value="clear_screen()" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;labelBackgroundColor=none;" parent="1" vertex="1">
-          <mxGeometry x="408.83000000000004" y="170" width="120" height="60" as="geometry" />
+          <mxGeometry x="383.55000000000007" y="125" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-20" value="False" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;" parent="1" source="5EhukW0RqnBsrfUFgMam-6" edge="1">
           <mxGeometry x="-0.1429" relative="1" as="geometry">
-            <mxPoint x="348.83000000000004" y="380" as="targetPoint" />
+            <mxPoint x="323.55000000000007" y="335" as="targetPoint" />
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-6" value="Response is &quot;yes&quot;" style="rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=none;" parent="1" vertex="1">
-          <mxGeometry x="418.83000000000004" y="330" width="100" height="100" as="geometry" />
+          <mxGeometry x="393.55000000000007" y="285" width="100" height="100" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;" parent="1" source="5EhukW0RqnBsrfUFgMam-4" target="5EhukW0RqnBsrfUFgMam-9" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="468.83000000000004" y="230" as="sourcePoint" />
-            <mxPoint x="468.83000000000004" y="330" as="targetPoint" />
+            <mxPoint x="443.55000000000007" y="185" as="sourcePoint" />
+            <mxPoint x="443.55000000000007" y="285" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-9" value="Ask: &quot;Would you like to create a new quiz? (y/n)&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;labelBackgroundColor=none;" parent="1" vertex="1">
-          <mxGeometry x="388.83000000000004" y="250" width="160" height="60" as="geometry" />
+          <mxGeometry x="363.55000000000007" y="205" width="160" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-96" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="5EhukW0RqnBsrfUFgMam-10" target="5EhukW0RqnBsrfUFgMam-95" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-10" value="create quiz object by calling create_quiz(topic) and passing the number of questions and math topic" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;labelBackgroundColor=none;" parent="1" vertex="1">
-          <mxGeometry x="738.83" y="530" width="143.75" height="90" as="geometry" />
+          <mxGeometry x="713.5500000000001" y="485" width="143.75" height="90" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;" parent="1" source="5EhukW0RqnBsrfUFgMam-6" target="5EhukW0RqnBsrfUFgMam-12" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="518.83" y="380" as="sourcePoint" />
-            <mxPoint x="738.83" y="380" as="targetPoint" />
+            <mxPoint x="493.55000000000007" y="335" as="sourcePoint" />
+            <mxPoint x="713.5500000000001" y="335" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="625.83" y="370" />
+              <mxPoint x="600.5500000000001" y="325" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -58,29 +58,29 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-12" value="Get number of questions as int" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;labelBackgroundColor=none;" parent="1" vertex="1">
-          <mxGeometry x="583.83" y="292.5" width="126.17" height="35" as="geometry" />
+          <mxGeometry x="558.5500000000001" y="247.5" width="126.17" height="35" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;" parent="1" target="5EhukW0RqnBsrfUFgMam-17" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="806.95" y="820" as="sourcePoint" />
+            <mxPoint x="781.6700000000001" y="775" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;" parent="1" source="5EhukW0RqnBsrfUFgMam-17" target="5EhukW0RqnBsrfUFgMam-39" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="708.83" y="900" />
-              <mxPoint x="708.83" y="705" />
-              <mxPoint x="638.83" y="705" />
-              <mxPoint x="638.83" y="580" />
+              <mxPoint x="683.5500000000001" y="855" />
+              <mxPoint x="683.5500000000001" y="660" />
+              <mxPoint x="613.5500000000001" y="660" />
+              <mxPoint x="613.5500000000001" y="535" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-17" value="Display that the file was saved" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;labelBackgroundColor=none;" parent="1" vertex="1">
-          <mxGeometry x="740.7" y="875" width="135" height="50" as="geometry" />
+          <mxGeometry x="715.4200000000001" y="830" width="135" height="50" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;" parent="1" target="5EhukW0RqnBsrfUFgMam-21" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="288.83000000000004" y="410" as="sourcePoint" />
+            <mxPoint x="263.55000000000007" y="365" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;" parent="1" source="5EhukW0RqnBsrfUFgMam-21" target="5EhukW0RqnBsrfUFgMam-25" edge="1">
@@ -94,8 +94,8 @@
         <mxCell id="5EhukW0RqnBsrfUFgMam-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;" parent="1" source="5EhukW0RqnBsrfUFgMam-21" target="5EhukW0RqnBsrfUFgMam-39" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="408.83000000000004" y="480" />
-              <mxPoint x="408.83000000000004" y="580" />
+              <mxPoint x="383.55000000000007" y="435" />
+              <mxPoint x="383.55000000000007" y="535" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -105,30 +105,30 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-21" value="There was an exception" style="rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=none;" parent="1" vertex="1">
-          <mxGeometry x="248.83" y="440" width="80" height="80" as="geometry" />
+          <mxGeometry x="223.55" y="395" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;" parent="1" source="5EhukW0RqnBsrfUFgMam-25" target="5EhukW0RqnBsrfUFgMam-30" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="288.83000000000004" y="830" />
-              <mxPoint x="413.83000000000004" y="830" />
+              <mxPoint x="263.55000000000007" y="785" />
+              <mxPoint x="388.55000000000007" y="785" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-25" value="Display that no quiz file was found" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;labelBackgroundColor=none;" parent="1" vertex="1">
-          <mxGeometry x="223.83" y="560" width="130" height="60" as="geometry" />
+          <mxGeometry x="198.55" y="515" width="130" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-33" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;" parent="1" source="5EhukW0RqnBsrfUFgMam-30" target="5EhukW0RqnBsrfUFgMam-32" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-30" value="Ask user if they want to restart the program" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;labelBackgroundColor=none;" parent="1" vertex="1">
-          <mxGeometry x="463.83000000000004" y="910" width="160" height="60" as="geometry" />
+          <mxGeometry x="438.55000000000007" y="865" width="160" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;" parent="1" source="5EhukW0RqnBsrfUFgMam-32" target="5EhukW0RqnBsrfUFgMam-4" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="168.83" y="1040" />
-              <mxPoint x="168.83" y="200" />
+              <mxPoint x="143.55" y="995" />
+              <mxPoint x="143.55" y="155" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -146,21 +146,21 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-32" value="Response is &quot;yes&quot;" style="rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=none;" parent="1" vertex="1">
-          <mxGeometry x="503.83000000000004" y="1000" width="80" height="80" as="geometry" />
+          <mxGeometry x="478.55000000000007" y="955" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-36" value="End" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;" parent="1" vertex="1">
-          <mxGeometry x="483.83000000000004" y="1210" width="120" height="60" as="geometry" />
+          <mxGeometry x="458.55000000000007" y="1165" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-45" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;" parent="1" source="5EhukW0RqnBsrfUFgMam-39" target="5EhukW0RqnBsrfUFgMam-44" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-39" value="Ask: &quot;Start quiz? (y/n)&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;labelBackgroundColor=none;" parent="1" vertex="1">
-          <mxGeometry x="478.83000000000004" y="550" width="120" height="60" as="geometry" />
+          <mxGeometry x="453.55000000000007" y="505" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;" parent="1" source="5EhukW0RqnBsrfUFgMam-44" target="5EhukW0RqnBsrfUFgMam-30" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="413.83000000000004" y="680" />
+              <mxPoint x="388.55000000000007" y="635" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -178,24 +178,24 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-44" value="Response is &quot;yes&quot;" style="rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=none;" parent="1" vertex="1">
-          <mxGeometry x="498.83000000000004" y="640" width="80" height="80" as="geometry" />
+          <mxGeometry x="473.55000000000007" y="595" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;" parent="1" source="5EhukW0RqnBsrfUFgMam-48" target="5EhukW0RqnBsrfUFgMam-36" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="678.83" y="780" />
-              <mxPoint x="678.83" y="1240" />
+              <mxPoint x="653.5500000000001" y="735" />
+              <mxPoint x="653.5500000000001" y="1195" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-48" value="call display_quiz(quiz) and pass the quiz object" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;labelBackgroundColor=none;" parent="1" vertex="1">
-          <mxGeometry x="468.83000000000004" y="750" width="140" height="60" as="geometry" />
+          <mxGeometry x="443.55000000000007" y="705" width="140" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-62" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;" parent="1" source="5EhukW0RqnBsrfUFgMam-55" target="5EhukW0RqnBsrfUFgMam-61" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-55" value="BEGIN clear_screen()" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;arcSize=50;" parent="1" vertex="1">
-          <mxGeometry x="1195" y="80" width="130" height="60" as="geometry" />
+          <mxGeometry x="1280" y="40" width="130" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-66" value="False" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;" parent="1" source="5EhukW0RqnBsrfUFgMam-61" target="5EhukW0RqnBsrfUFgMam-65" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -203,10 +203,10 @@
         <mxCell id="5EhukW0RqnBsrfUFgMam-75" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;" parent="1" source="5EhukW0RqnBsrfUFgMam-61" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="1370" y="220" />
-              <mxPoint x="1370" y="620" />
+              <mxPoint x="1455" y="180" />
+              <mxPoint x="1455" y="580" />
             </Array>
-            <mxPoint x="1319.9999999999995" y="620.0000000000002" as="targetPoint" />
+            <mxPoint x="1404.9999999999995" y="580.0000000000002" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-76" value="True" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=none;" parent="5EhukW0RqnBsrfUFgMam-75" vertex="1" connectable="0">
@@ -215,39 +215,39 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-61" value="debugging variable is True?" style="rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=none;" parent="1" vertex="1">
-          <mxGeometry x="1220" y="180" width="80" height="80" as="geometry" />
+          <mxGeometry x="1305" y="140" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-70" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;" parent="1" source="5EhukW0RqnBsrfUFgMam-65" target="5EhukW0RqnBsrfUFgMam-69" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-65" value="Clear the screen using os module" style="whiteSpace=wrap;html=1;labelBackgroundColor=none;" parent="1" vertex="1">
-          <mxGeometry x="1200" y="310" width="120" height="60" as="geometry" />
+          <mxGeometry x="1285" y="270" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-72" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;" parent="1" source="5EhukW0RqnBsrfUFgMam-69" target="5EhukW0RqnBsrfUFgMam-71" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-69" value="Get the console width" style="whiteSpace=wrap;html=1;labelBackgroundColor=none;" parent="1" vertex="1">
-          <mxGeometry x="1200" y="400" width="120" height="60" as="geometry" />
+          <mxGeometry x="1285" y="360" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-74" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;" parent="1" source="5EhukW0RqnBsrfUFgMam-71" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1260.0000000000005" y="589.9999999999998" as="targetPoint" />
+            <mxPoint x="1345.0000000000005" y="549.9999999999998" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-71" value="Display program header" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;labelBackgroundColor=none;" parent="1" vertex="1">
-          <mxGeometry x="1200" y="495" width="120" height="60" as="geometry" />
+          <mxGeometry x="1285" y="455" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-86" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;" parent="1" source="5EhukW0RqnBsrfUFgMam-82" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1720.1" y="170" as="targetPoint" />
+            <mxPoint x="1805.1" y="130" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-82" value="BEGIN create_quiz(number, prompt)" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;arcSize=50;" parent="1" vertex="1">
-          <mxGeometry x="1660" y="80" width="120" height="60" as="geometry" />
+          <mxGeometry x="1745" y="40" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-88" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;" parent="1" target="5EhukW0RqnBsrfUFgMam-87" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1720.1" y="240" as="sourcePoint" />
+            <mxPoint x="1805.1" y="200" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-90" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;" parent="1" source="5EhukW0RqnBsrfUFgMam-87" target="5EhukW0RqnBsrfUFgMam-89" edge="1">
@@ -267,15 +267,15 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-87" value="api_key.txt file wasn&#39;t found" style="rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=none;" parent="1" vertex="1">
-          <mxGeometry x="1680" y="270" width="80" height="80" as="geometry" />
+          <mxGeometry x="1765" y="230" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-108" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;" parent="1" source="5EhukW0RqnBsrfUFgMam-89" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1510" y="730" as="targetPoint" />
+            <mxPoint x="1595" y="690" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-89" value="Display that there was an error finding the api_key.txt file" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;labelBackgroundColor=none;" parent="1" vertex="1">
-          <mxGeometry x="1450" y="280" width="120" height="60" as="geometry" />
+          <mxGeometry x="1535" y="240" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-113" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;" parent="1" source="5EhukW0RqnBsrfUFgMam-118" target="5EhukW0RqnBsrfUFgMam-112" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -286,11 +286,11 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-92" value="Create gemini request with the content being the prompt, amount of questions and response schema as the Quiz object" style="whiteSpace=wrap;html=1;labelBackgroundColor=none;" parent="1" vertex="1">
-          <mxGeometry x="1660" y="430" width="120" height="100" as="geometry" />
+          <mxGeometry x="1745" y="390" width="120" height="100" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-97" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;" parent="1" source="5EhukW0RqnBsrfUFgMam-95" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="810.6999999999998" y="774.9999999999998" as="targetPoint" />
+            <mxPoint x="785.4199999999998" y="729.9999999999998" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-98" value="True" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=none;" parent="5EhukW0RqnBsrfUFgMam-97" vertex="1" connectable="0">
@@ -299,12 +299,12 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-95" value="quiz object is not false" style="rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=none;" parent="1" vertex="1">
-          <mxGeometry x="759.45" y="635" width="102.5" height="100" as="geometry" />
+          <mxGeometry x="734.1700000000001" y="590" width="102.5" height="100" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-102" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;" parent="1" source="5EhukW0RqnBsrfUFgMam-95" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="862.4499999999999" y="685" as="sourcePoint" />
-            <mxPoint x="949.496666666667" y="750" as="targetPoint" />
+            <mxPoint x="837.17" y="640" as="sourcePoint" />
+            <mxPoint x="924.216666666667" y="705" as="targetPoint" />
             <Array as="points" />
           </mxGeometry>
         </mxCell>
@@ -315,28 +315,28 @@
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-104" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;" parent="1" target="5EhukW0RqnBsrfUFgMam-30" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="938.83" y="810" as="sourcePoint" />
+            <mxPoint x="913.5500000000001" y="765" as="sourcePoint" />
             <Array as="points">
-              <mxPoint x="938.83" y="940" />
+              <mxPoint x="913.5500000000001" y="895" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-101" value="Display there was an error creating quiz" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;labelBackgroundColor=none;" parent="1" vertex="1">
-          <mxGeometry x="882.5799999999999" y="750" width="140" height="60" as="geometry" />
+          <mxGeometry x="857.3" y="705" width="140" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-116" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;" parent="1" source="5EhukW0RqnBsrfUFgMam-111" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1720" y="900" as="targetPoint" />
+            <mxPoint x="1805" y="860" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-111" value="Call the function format() of the quiz object" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;labelBackgroundColor=none;" parent="1" vertex="1">
-          <mxGeometry x="1655" y="780" width="130" height="80" as="geometry" />
+          <mxGeometry x="1740" y="740" width="130" height="80" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-114" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;" parent="1" source="5EhukW0RqnBsrfUFgMam-112" target="5EhukW0RqnBsrfUFgMam-111" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-112" value="Convert gemini response to quiz object" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" parent="1" vertex="1">
-          <mxGeometry x="1660" y="680" width="120" height="60" as="geometry" />
+          <mxGeometry x="1745" y="640" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-129" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;" parent="1" source="5EhukW0RqnBsrfUFgMam-132" target="5EhukW0RqnBsrfUFgMam-128" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -347,29 +347,29 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-117" value="BEGIN Quiz.format(self)" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;arcSize=50;" parent="1" vertex="1">
-          <mxGeometry x="1940" y="80" width="120" height="60" as="geometry" />
+          <mxGeometry x="2025" y="40" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-119" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;" parent="1" source="5EhukW0RqnBsrfUFgMam-92" target="5EhukW0RqnBsrfUFgMam-118" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1720" y="530" as="sourcePoint" />
-            <mxPoint x="1720" y="680" as="targetPoint" />
+            <mxPoint x="1805" y="490" as="sourcePoint" />
+            <mxPoint x="1805" y="640" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-120" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;" parent="1" source="5EhukW0RqnBsrfUFgMam-123" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="1510" y="595" />
+              <mxPoint x="1595" y="555" />
             </Array>
-            <mxPoint x="1510" y="730" as="targetPoint" />
+            <mxPoint x="1595" y="690" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-118" value="There was an exception" style="rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=none;" parent="1" vertex="1">
-          <mxGeometry x="1680" y="555" width="80" height="80" as="geometry" />
+          <mxGeometry x="1765" y="515" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-124" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;" parent="1" source="5EhukW0RqnBsrfUFgMam-118" target="5EhukW0RqnBsrfUFgMam-123" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1680" y="595" as="sourcePoint" />
-            <mxPoint x="1560" y="730" as="targetPoint" />
+            <mxPoint x="1765" y="555" as="sourcePoint" />
+            <mxPoint x="1645" y="690" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-125" value="True" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=none;" parent="5EhukW0RqnBsrfUFgMam-124" vertex="1" connectable="0">
@@ -378,31 +378,31 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-123" value="Display that the api key is invalid" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;labelBackgroundColor=none;" parent="1" vertex="1">
-          <mxGeometry x="1520" y="565" width="120" height="60" as="geometry" />
+          <mxGeometry x="1605" y="525" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-131" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;" parent="1" source="5EhukW0RqnBsrfUFgMam-128" target="5EhukW0RqnBsrfUFgMam-130" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-128" value="Get next question from the self.pre_questions list" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" parent="1" vertex="1">
-          <mxGeometry x="1940" y="330" width="120" height="60" as="geometry" />
+          <mxGeometry x="2025" y="290" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-137" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;" parent="1" source="5EhukW0RqnBsrfUFgMam-130" target="5EhukW0RqnBsrfUFgMam-136" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-130" value="Create a FormatedQuestion object and pass current question" style="whiteSpace=wrap;html=1;rounded=0;labelBackgroundColor=none;" parent="1" vertex="1">
-          <mxGeometry x="1940" y="420" width="120" height="60" as="geometry" />
+          <mxGeometry x="2025" y="380" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-133" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;" parent="1" source="5EhukW0RqnBsrfUFgMam-117" target="5EhukW0RqnBsrfUFgMam-132" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="2000" y="140" as="sourcePoint" />
-            <mxPoint x="2000" y="265" as="targetPoint" />
+            <mxPoint x="2085" y="100" as="sourcePoint" />
+            <mxPoint x="2085" y="225" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-142" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;labelBackgroundColor=none;fontColor=default;" parent="1" source="5EhukW0RqnBsrfUFgMam-132" target="5EhukW0RqnBsrfUFgMam-141" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="1880" y="220" />
-              <mxPoint x="1880" y="670" />
+              <mxPoint x="1965" y="180" />
+              <mxPoint x="1965" y="630" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -412,36 +412,36 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-132" value="There is another question in the self.pre_questions list" style="rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=none;" parent="1" vertex="1">
-          <mxGeometry x="1930" y="160" width="140" height="120" as="geometry" />
+          <mxGeometry x="2015" y="120" width="140" height="120" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-138" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;" parent="1" source="5EhukW0RqnBsrfUFgMam-136" target="5EhukW0RqnBsrfUFgMam-132" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="2140" y="550" />
-              <mxPoint x="2140" y="220" />
+              <mxPoint x="2225" y="510" />
+              <mxPoint x="2225" y="180" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-136" value="Append the created object to local formated_questions list" style="whiteSpace=wrap;html=1;rounded=0;labelBackgroundColor=none;" parent="1" vertex="1">
-          <mxGeometry x="1940" y="510" width="120" height="60" as="geometry" />
+          <mxGeometry x="2025" y="470" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="pomaQXtchL_S_8z3-I5B-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="5EhukW0RqnBsrfUFgMam-141" target="pomaQXtchL_S_8z3-I5B-10" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-141" value="RETURN formated_questions list" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;arcSize=0;" parent="1" vertex="1">
-          <mxGeometry x="1940" y="640" width="120" height="60" as="geometry" />
+          <mxGeometry x="2025" y="600" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-146" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;" parent="1" source="5EhukW0RqnBsrfUFgMam-144" target="5EhukW0RqnBsrfUFgMam-145" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-144" value="BEGIN display_quiz(questions)" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;arcSize=50;" parent="1" vertex="1">
-          <mxGeometry x="400.1399999999999" y="1680" width="210" height="60" as="geometry" />
+          <mxGeometry x="403.6899999999999" y="1701" width="210" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-148" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;" parent="1" source="5EhukW0RqnBsrfUFgMam-145" target="5EhukW0RqnBsrfUFgMam-147" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-145" value="Call clear_screen()" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;labelBackgroundColor=none;" parent="1" vertex="1">
-          <mxGeometry x="445.1399999999999" y="1770" width="120" height="60" as="geometry" />
+          <mxGeometry x="448.6899999999999" y="1791" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-150" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;" parent="1" source="5EhukW0RqnBsrfUFgMam-147" target="5EhukW0RqnBsrfUFgMam-149" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -460,19 +460,19 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-147" value="There is another question in the questions list" style="rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=none;" parent="1" vertex="1">
-          <mxGeometry x="425.1399999999999" y="1880" width="160" height="100" as="geometry" />
+          <mxGeometry x="428.6899999999999" y="1901" width="160" height="100" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-161" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;" parent="1" source="5EhukW0RqnBsrfUFgMam-149" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="505.1399999999999" y="2110" as="targetPoint" />
+            <mxPoint x="508.6899999999999" y="2131" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-149" value="Get the next question object from the questions list" style="whiteSpace=wrap;html=1;labelBackgroundColor=none;" parent="1" vertex="1">
-          <mxGeometry x="445.1399999999999" y="2020" width="120" height="60" as="geometry" />
+          <mxGeometry x="448.6899999999999" y="2041" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-163" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;" parent="1" target="5EhukW0RqnBsrfUFgMam-162" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="505.1399999999999" y="2170" as="sourcePoint" />
+            <mxPoint x="508.6899999999999" y="2191" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-166" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;" parent="1" source="5EhukW0RqnBsrfUFgMam-162" target="5EhukW0RqnBsrfUFgMam-165" edge="1">
@@ -486,8 +486,8 @@
         <mxCell id="5EhukW0RqnBsrfUFgMam-180" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;" parent="1" source="5EhukW0RqnBsrfUFgMam-162" target="5EhukW0RqnBsrfUFgMam-172" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="595.1399999999999" y="2240" />
-              <mxPoint x="595.1399999999999" y="2070" />
+              <mxPoint x="598.6899999999999" y="2261" />
+              <mxPoint x="598.6899999999999" y="2091" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -497,31 +497,31 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-162" value="Returned value is True" style="rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=none;" parent="1" vertex="1">
-          <mxGeometry x="465.1399999999999" y="2200" width="80" height="80" as="geometry" />
+          <mxGeometry x="468.6899999999999" y="2221" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-164" value="Call the get_question_answer() function of the question object&amp;nbsp;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;labelBackgroundColor=none;" parent="1" vertex="1">
-          <mxGeometry x="445.1399999999999" y="2110" width="120" height="60" as="geometry" />
+          <mxGeometry x="448.6899999999999" y="2131" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-177" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;" parent="1" source="5EhukW0RqnBsrfUFgMam-165" target="5EhukW0RqnBsrfUFgMam-172" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="615.1399999999999" y="2160" as="targetPoint" />
+            <mxPoint x="618.6899999999999" y="2181" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="595.1399999999999" y="2340" />
-              <mxPoint x="595.1399999999999" y="2070" />
+              <mxPoint x="598.6899999999999" y="2361" />
+              <mxPoint x="598.6899999999999" y="2091" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-165" value="Call update_quiz() and pass the questions list" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;labelBackgroundColor=none;" parent="1" vertex="1">
-          <mxGeometry x="445.1399999999999" y="2310" width="120" height="60" as="geometry" />
+          <mxGeometry x="448.6899999999999" y="2331" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-168" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;" parent="1" target="5EhukW0RqnBsrfUFgMam-171" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="685.1399999999999" y="2100" as="sourcePoint" />
+            <mxPoint x="688.6899999999999" y="2121" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-169" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;" parent="1" source="5EhukW0RqnBsrfUFgMam-171" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="685.1399999999999" y="2240" as="targetPoint" />
+            <mxPoint x="688.6899999999999" y="2261" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-170" value="True" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=none;" parent="5EhukW0RqnBsrfUFgMam-169" vertex="1" connectable="0">
@@ -532,8 +532,8 @@
         <mxCell id="5EhukW0RqnBsrfUFgMam-187" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;" parent="1" source="5EhukW0RqnBsrfUFgMam-171" target="5EhukW0RqnBsrfUFgMam-147" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="795.1399999999999" y="2170" />
-              <mxPoint x="795.1399999999999" y="1930" />
+              <mxPoint x="798.6899999999999" y="2191" />
+              <mxPoint x="798.6899999999999" y="1951" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -543,56 +543,56 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-171" value="Returned value is True" style="rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=none;" parent="1" vertex="1">
-          <mxGeometry x="645.1399999999999" y="2130" width="80" height="80" as="geometry" />
+          <mxGeometry x="648.6899999999999" y="2151" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-172" value="Call the is_correct_answer() function of the question object&amp;nbsp;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;labelBackgroundColor=none;" parent="1" vertex="1">
-          <mxGeometry x="625.1399999999999" y="2040" width="120" height="60" as="geometry" />
+          <mxGeometry x="628.6899999999999" y="2061" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-178" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;" parent="1" source="5EhukW0RqnBsrfUFgMam-175" target="5EhukW0RqnBsrfUFgMam-147" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="615.1399999999999" y="1970" as="targetPoint" />
+            <mxPoint x="618.6899999999999" y="1991" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="795.1399999999999" y="2270" />
-              <mxPoint x="795.1399999999999" y="1930" />
+              <mxPoint x="798.6899999999999" y="2291" />
+              <mxPoint x="798.6899999999999" y="1951" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-175" value="add 1 to the correct_answers variable" style="whiteSpace=wrap;html=1;labelBackgroundColor=none;" parent="1" vertex="1">
-          <mxGeometry x="625.1399999999999" y="2240" width="120" height="60" as="geometry" />
+          <mxGeometry x="628.6899999999999" y="2261" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-194" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="5EhukW0RqnBsrfUFgMam-190" target="5EhukW0RqnBsrfUFgMam-193" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-190" value="Call clear_screen()" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;labelBackgroundColor=none;" parent="1" vertex="1">
-          <mxGeometry x="235" y="1900" width="120" height="60" as="geometry" />
+          <mxGeometry x="238.55" y="1921" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-196" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="5EhukW0RqnBsrfUFgMam-193" target="5EhukW0RqnBsrfUFgMam-195" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-193" value="Display &quot;Checking answers&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;labelBackgroundColor=none;" parent="1" vertex="1">
-          <mxGeometry x="235" y="1990" width="120" height="60" as="geometry" />
+          <mxGeometry x="238.55" y="2011" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-198" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="5EhukW0RqnBsrfUFgMam-195" target="5EhukW0RqnBsrfUFgMam-197" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-195" value="Display the user&#39;s score using correct_answers and length of the questions list" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;labelBackgroundColor=none;" parent="1" vertex="1">
-          <mxGeometry x="210" y="2080" width="170" height="70" as="geometry" />
+          <mxGeometry x="213.55" y="2101" width="170" height="70" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-200" value="True" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="5EhukW0RqnBsrfUFgMam-197" target="5EhukW0RqnBsrfUFgMam-199" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-197" value="correct_answers does not equal to the length of the questions list" style="rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=none;" parent="1" vertex="1">
-          <mxGeometry x="220" y="2185" width="150" height="110" as="geometry" />
+          <mxGeometry x="223.55" y="2206" width="150" height="110" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-202" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="5EhukW0RqnBsrfUFgMam-199" target="5EhukW0RqnBsrfUFgMam-201" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-199" value="Ask: &quot;Would you like to see the questions you got wrong? (y/n)&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;labelBackgroundColor=none;" parent="1" vertex="1">
-          <mxGeometry x="217.5" y="2335" width="155" height="60" as="geometry" />
+          <mxGeometry x="221.05" y="2356" width="155" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-204" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="5EhukW0RqnBsrfUFgMam-201" target="5EhukW0RqnBsrfUFgMam-205" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="295" y="2595" as="targetPoint" />
+            <mxPoint x="298.55" y="2616" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-209" value="True" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="5EhukW0RqnBsrfUFgMam-204" vertex="1" connectable="0">
@@ -606,7 +606,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-201" value="User input is &quot;yes&quot;" style="rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=none;" parent="1" vertex="1">
-          <mxGeometry x="255" y="2425" width="80" height="80" as="geometry" />
+          <mxGeometry x="258.55" y="2446" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-211" value="True" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="5EhukW0RqnBsrfUFgMam-205" target="5EhukW0RqnBsrfUFgMam-210" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -614,8 +614,8 @@
         <mxCell id="5EhukW0RqnBsrfUFgMam-239" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;" parent="1" source="5EhukW0RqnBsrfUFgMam-205" target="5EhukW0RqnBsrfUFgMam-236" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="425" y="2540" />
-              <mxPoint x="295" y="2540" />
+              <mxPoint x="428.55" y="2561" />
+              <mxPoint x="298.55" y="2561" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -625,19 +625,19 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-205" value="There is another question in the questions list" style="rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=none;" parent="1" vertex="1">
-          <mxGeometry x="385.1399999999999" y="2415" width="160" height="100" as="geometry" />
+          <mxGeometry x="388.6899999999999" y="2436" width="160" height="100" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-213" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="5EhukW0RqnBsrfUFgMam-210" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="465.0588235294117" y="2675.081176470588" as="targetPoint" />
+            <mxPoint x="468.6088235294117" y="2696.081176470588" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-210" value="Get the next question object from the questions list" style="whiteSpace=wrap;html=1;labelBackgroundColor=none;" parent="1" vertex="1">
-          <mxGeometry x="405.1399999999999" y="2585" width="120" height="60" as="geometry" />
+          <mxGeometry x="408.6899999999999" y="2606" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-214" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;" parent="1" target="5EhukW0RqnBsrfUFgMam-215" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="465.1399999999999" y="2735" as="sourcePoint" />
+            <mxPoint x="468.6899999999999" y="2756" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-329" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="5EhukW0RqnBsrfUFgMam-215" target="5EhukW0RqnBsrfUFgMam-219" edge="1">
@@ -649,55 +649,55 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-215" value="Returned value is False" style="rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=none;" parent="1" vertex="1">
-          <mxGeometry x="425.1399999999999" y="2765" width="80" height="80" as="geometry" />
+          <mxGeometry x="428.6899999999999" y="2786" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-216" value="Call the is_correct_answer() function of the question object&amp;nbsp;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;labelBackgroundColor=none;" parent="1" vertex="1">
-          <mxGeometry x="405.1399999999999" y="2675" width="120" height="60" as="geometry" />
+          <mxGeometry x="408.6899999999999" y="2696" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-222" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="5EhukW0RqnBsrfUFgMam-219" target="5EhukW0RqnBsrfUFgMam-221" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-219" value="Call clear_screen()" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;labelBackgroundColor=none;" parent="1" vertex="1">
-          <mxGeometry x="405.14000000000004" y="2890" width="120" height="60" as="geometry" />
+          <mxGeometry x="408.69000000000005" y="2911" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-231" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="5EhukW0RqnBsrfUFgMam-221" target="5EhukW0RqnBsrfUFgMam-224" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-221" value="Call the print() function of the question object" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;labelBackgroundColor=none;" parent="1" vertex="1">
-          <mxGeometry x="405.14000000000004" y="2980" width="120" height="60" as="geometry" />
+          <mxGeometry x="408.69000000000005" y="3001" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-228" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="5EhukW0RqnBsrfUFgMam-224" target="5EhukW0RqnBsrfUFgMam-227" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-224" value="Display the user&#39;s answer" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
-          <mxGeometry x="405.14000000000004" y="3070" width="120" height="60" as="geometry" />
+          <mxGeometry x="408.69000000000005" y="3091" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-325" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="5EhukW0RqnBsrfUFgMam-227" target="5EhukW0RqnBsrfUFgMam-324" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="570" y="3200" />
-              <mxPoint x="570" y="2920" />
+              <mxPoint x="573.5500000000001" y="3221" />
+              <mxPoint x="573.5500000000001" y="2941" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-227" value="Display the correct answer" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
-          <mxGeometry x="405.14000000000004" y="3170" width="120" height="60" as="geometry" />
+          <mxGeometry x="408.69000000000005" y="3191" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-238" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="5EhukW0RqnBsrfUFgMam-236" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="295" y="2680" as="targetPoint" />
+            <mxPoint x="298.55" y="2701" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-236" value="Display &quot;Ending program&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
-          <mxGeometry x="235" y="2585" width="120" height="60" as="geometry" />
+          <mxGeometry x="238.55" y="2606" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-245" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="5EhukW0RqnBsrfUFgMam-242" target="5EhukW0RqnBsrfUFgMam-246" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1105" y="1775" as="targetPoint" />
+            <mxPoint x="1447.36" y="2190" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-242" value="BEGIN get_question_answer(self)" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;arcSize=50;" parent="1" vertex="1">
-          <mxGeometry x="1000" y="1680" width="210" height="60" as="geometry" />
+          <mxGeometry x="1342.36" y="2095" width="210" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-248" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="5EhukW0RqnBsrfUFgMam-246" target="5EhukW0RqnBsrfUFgMam-247" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -710,9 +710,9 @@
         <mxCell id="5EhukW0RqnBsrfUFgMam-269" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="5EhukW0RqnBsrfUFgMam-246" target="5EhukW0RqnBsrfUFgMam-268" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="1280" y="1835" />
-              <mxPoint x="1280" y="2340" />
-              <mxPoint x="1180" y="2340" />
+              <mxPoint x="1622.36" y="2250" />
+              <mxPoint x="1622.36" y="2755" />
+              <mxPoint x="1522.36" y="2755" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -722,19 +722,19 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-246" value="user_answer variable of self is empty" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1042.5" y="1780" width="125" height="110" as="geometry" />
+          <mxGeometry x="1384.86" y="2195" width="125" height="110" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-251" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="5EhukW0RqnBsrfUFgMam-247" target="5EhukW0RqnBsrfUFgMam-250" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-247" value="Call the print() function of self" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" parent="1" vertex="1">
-          <mxGeometry x="1045" y="1930" width="120" height="60" as="geometry" />
+          <mxGeometry x="1387.36" y="2345" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-253" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="5EhukW0RqnBsrfUFgMam-250" target="5EhukW0RqnBsrfUFgMam-252" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-250" value="Ask: &quot;The answer is... (A/B/C/D)&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
-          <mxGeometry x="1027.5" y="2030" width="155" height="60" as="geometry" />
+          <mxGeometry x="1369.86" y="2445" width="155" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-255" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="5EhukW0RqnBsrfUFgMam-252" target="5EhukW0RqnBsrfUFgMam-254" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -753,48 +753,48 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-252" value="Input is not found in list of answer keys" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1052.5" y="2132.5" width="105" height="95" as="geometry" />
+          <mxGeometry x="1394.86" y="2547.5" width="105" height="95" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-257" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="5EhukW0RqnBsrfUFgMam-254" target="5EhukW0RqnBsrfUFgMam-250" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="1240" y="2305" />
-              <mxPoint x="1240" y="2060" />
+              <mxPoint x="1582.36" y="2720" />
+              <mxPoint x="1582.36" y="2475" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-254" value="Display &quot;invalid answer please try again&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
-          <mxGeometry x="1045" y="2275" width="120" height="60" as="geometry" />
+          <mxGeometry x="1387.36" y="2690" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-265" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="5EhukW0RqnBsrfUFgMam-261" target="5EhukW0RqnBsrfUFgMam-264" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-261" value="Assign the input to the user_answer variable of self" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="860" y="2150" width="120" height="60" as="geometry" />
+          <mxGeometry x="1202.36" y="2565" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-267" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="5EhukW0RqnBsrfUFgMam-264" target="5EhukW0RqnBsrfUFgMam-266" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-264" value="Call clear_screen()" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" parent="1" vertex="1">
-          <mxGeometry x="860" y="2240" width="120" height="60" as="geometry" />
+          <mxGeometry x="1202.36" y="2655" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="TJUkzF9d9tyzJdKfze_w-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="5EhukW0RqnBsrfUFgMam-266" target="TJUkzF9d9tyzJdKfze_w-2" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-266" value="RETURN True" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;" parent="1" vertex="1">
-          <mxGeometry x="970" y="2395" width="120" height="60" as="geometry" />
+          <mxGeometry x="1312.36" y="2810" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="TJUkzF9d9tyzJdKfze_w-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="5EhukW0RqnBsrfUFgMam-268" target="TJUkzF9d9tyzJdKfze_w-2" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-268" value="RETURN False" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;" parent="1" vertex="1">
-          <mxGeometry x="1120" y="2395" width="120" height="60" as="geometry" />
+          <mxGeometry x="1462.36" y="2810" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-273" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="5EhukW0RqnBsrfUFgMam-271" target="5EhukW0RqnBsrfUFgMam-272" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-271" value="BEGIN is_correct_answer(self)" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;arcSize=50;" parent="1" vertex="1">
-          <mxGeometry x="1340" y="1680" width="210" height="60" as="geometry" />
+          <mxGeometry x="1622.5" y="1727.5" width="210" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-275" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="5EhukW0RqnBsrfUFgMam-272" target="5EhukW0RqnBsrfUFgMam-274" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -803,25 +803,25 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-272" value="user_answer variable is in the right_answer keys list&amp;nbsp;" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1377.5" y="1780" width="135" height="110" as="geometry" />
+          <mxGeometry x="1660" y="1827.5" width="135" height="110" as="geometry" />
         </mxCell>
         <mxCell id="TJUkzF9d9tyzJdKfze_w-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="5EhukW0RqnBsrfUFgMam-274" target="TJUkzF9d9tyzJdKfze_w-6" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-274" value="Return True" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;" parent="1" vertex="1">
-          <mxGeometry x="1385" y="1940" width="120" height="60" as="geometry" />
+          <mxGeometry x="1667.5" y="1987.5" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="TJUkzF9d9tyzJdKfze_w-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="5EhukW0RqnBsrfUFgMam-276" target="TJUkzF9d9tyzJdKfze_w-6" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-276" value="Return False" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;" parent="1" vertex="1">
-          <mxGeometry x="1560" y="1805" width="120" height="60" as="geometry" />
+          <mxGeometry x="1842.5" y="1852.5" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-281" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="5EhukW0RqnBsrfUFgMam-282" target="5EhukW0RqnBsrfUFgMam-280" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-278" value="BEGIN print(self)" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;arcSize=50;" parent="1" vertex="1">
-          <mxGeometry x="1800" y="1680" width="210" height="60" as="geometry" />
+          <mxGeometry x="2065" y="1670" width="210" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-285" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="5EhukW0RqnBsrfUFgMam-287" target="5EhukW0RqnBsrfUFgMam-284" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -829,8 +829,8 @@
         <mxCell id="5EhukW0RqnBsrfUFgMam-295" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="5EhukW0RqnBsrfUFgMam-280" target="5EhukW0RqnBsrfUFgMam-293" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="1760" y="1917.5" />
-              <mxPoint x="1760" y="2240" />
+              <mxPoint x="2025" y="1907.5" />
+              <mxPoint x="2025" y="2230" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -840,32 +840,32 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-280" value="There is another tuple of (letter, answer) in the answers dictionary of self" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1837.5" y="1860" width="135" height="115" as="geometry" />
+          <mxGeometry x="2102.5" y="1850" width="135" height="115" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-283" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="5EhukW0RqnBsrfUFgMam-278" target="5EhukW0RqnBsrfUFgMam-282" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1905" y="1740" as="sourcePoint" />
-            <mxPoint x="1905" y="1860" as="targetPoint" />
+            <mxPoint x="2170" y="1730" as="sourcePoint" />
+            <mxPoint x="2170" y="1850" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-282" value="Display top half of box, question number and question text" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
-          <mxGeometry x="1832.5" y="1770" width="145" height="60" as="geometry" />
+          <mxGeometry x="2097.5" y="1760" width="145" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-289" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="5EhukW0RqnBsrfUFgMam-284" target="5EhukW0RqnBsrfUFgMam-280" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="2060" y="2135" />
-              <mxPoint x="2060" y="1918" />
+              <mxPoint x="2325" y="2125" />
+              <mxPoint x="2325" y="1908" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-284" value="Display the letter and answer" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
-          <mxGeometry x="1837.5" y="2105" width="135" height="60" as="geometry" />
+          <mxGeometry x="2102.5" y="2095" width="135" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-288" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="5EhukW0RqnBsrfUFgMam-280" target="5EhukW0RqnBsrfUFgMam-287" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1905" y="1990" as="sourcePoint" />
-            <mxPoint x="1905" y="2105" as="targetPoint" />
+            <mxPoint x="2170" y="1980" as="sourcePoint" />
+            <mxPoint x="2170" y="2095" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-290" value="True" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="5EhukW0RqnBsrfUFgMam-288" vertex="1" connectable="0">
@@ -874,35 +874,35 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-287" value="Unpack next tuple of (letter, answer)" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1845" y="2020" width="120" height="60" as="geometry" />
+          <mxGeometry x="2110" y="2010" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-296" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="5EhukW0RqnBsrfUFgMam-293" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1905.0000000000005" y="2300" as="targetPoint" />
+            <mxPoint x="2170.0000000000005" y="2290" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-293" value="Display bottom half of box" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
-          <mxGeometry x="1825" y="2210" width="160" height="60" as="geometry" />
+          <mxGeometry x="2090" y="2200" width="160" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-306" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="5EhukW0RqnBsrfUFgMam-302" target="5EhukW0RqnBsrfUFgMam-305" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-302" value="BEGIN update_quiz(quiz)" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;arcSize=50;" parent="1" vertex="1">
-          <mxGeometry x="1380" y="2100" width="210" height="60" as="geometry" />
+          <mxGeometry x="1662.5" y="2147.5" width="210" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-308" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="5EhukW0RqnBsrfUFgMam-305" target="5EhukW0RqnBsrfUFgMam-307" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-305" value="Dump quiz object to quiz file using pickle library" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" parent="1" vertex="1">
-          <mxGeometry x="1405" y="2190" width="160" height="80" as="geometry" />
+          <mxGeometry x="1687.5" y="2237.5" width="160" height="80" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-310" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="5EhukW0RqnBsrfUFgMam-307" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1485" y="2415" as="targetPoint" />
+            <mxPoint x="1767.5" y="2462.5" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-307" value="Display that the quiz has been updated" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
-          <mxGeometry x="1425" y="2307.5" width="120" height="60" as="geometry" />
+          <mxGeometry x="1707.5" y="2355" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-314" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="5EhukW0RqnBsrfUFgMam-311" target="5EhukW0RqnBsrfUFgMam-313" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -914,10 +914,10 @@
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-320" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="5EhukW0RqnBsrfUFgMam-311" target="5EhukW0RqnBsrfUFgMam-30" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1070" y="790" as="targetPoint" />
+            <mxPoint x="1044.72" y="745" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="1080" y="310" />
-              <mxPoint x="1080" y="940" />
+              <mxPoint x="1054.72" y="265" />
+              <mxPoint x="1054.72" y="895" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -927,13 +927,13 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-311" value="There was an exception" style="rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=none;" parent="1" vertex="1">
-          <mxGeometry x="730" y="270" width="80" height="80" as="geometry" />
+          <mxGeometry x="704.72" y="225" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-317" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="5EhukW0RqnBsrfUFgMam-313" target="5EhukW0RqnBsrfUFgMam-316" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-313" value="Get topic" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;labelBackgroundColor=none;" parent="1" vertex="1">
-          <mxGeometry x="732.57" y="390" width="74.86" height="30" as="geometry" />
+          <mxGeometry x="707.2900000000001" y="345" width="74.86" height="30" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-318" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="5EhukW0RqnBsrfUFgMam-316" target="5EhukW0RqnBsrfUFgMam-10" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -946,8 +946,8 @@
         <mxCell id="5EhukW0RqnBsrfUFgMam-321" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="5EhukW0RqnBsrfUFgMam-316" target="5EhukW0RqnBsrfUFgMam-30" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="1080" y="405" />
-              <mxPoint x="1080" y="940" />
+              <mxPoint x="1054.72" y="360" />
+              <mxPoint x="1054.72" y="895" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -957,24 +957,24 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-316" value="There was an exception" style="rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=none;" parent="1" vertex="1">
-          <mxGeometry x="840" y="365" width="80" height="80" as="geometry" />
+          <mxGeometry x="814.72" y="320" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-331" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="5EhukW0RqnBsrfUFgMam-324" target="5EhukW0RqnBsrfUFgMam-326" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-324" value="Ask user if they want an explanation" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
-          <mxGeometry x="610.14" y="2890" width="120" height="60" as="geometry" />
+          <mxGeometry x="613.69" y="2911" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-333" value="True" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="5EhukW0RqnBsrfUFgMam-326" target="5EhukW0RqnBsrfUFgMam-337" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="670.1111111111109" y="3090" as="targetPoint" />
+            <mxPoint x="673.6611111111109" y="3111" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-339" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="5EhukW0RqnBsrfUFgMam-326" target="5EhukW0RqnBsrfUFgMam-205" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="840" y="3020" />
-              <mxPoint x="840" y="2465" />
+              <mxPoint x="843.5500000000001" y="3041" />
+              <mxPoint x="843.5500000000001" y="2486" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -984,30 +984,30 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-326" value="Response is yes" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="630.14" y="2980" width="80" height="80" as="geometry" />
+          <mxGeometry x="633.69" y="3001" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-336" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="5EhukW0RqnBsrfUFgMam-334" target="5EhukW0RqnBsrfUFgMam-205" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="840" y="3210" />
-              <mxPoint x="840" y="2465" />
+              <mxPoint x="843.5500000000001" y="3231" />
+              <mxPoint x="843.5500000000001" y="2486" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-334" value="Display function response" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
-          <mxGeometry x="610.14" y="3180" width="120" height="60" as="geometry" />
+          <mxGeometry x="613.69" y="3201" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-338" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="5EhukW0RqnBsrfUFgMam-337" target="5EhukW0RqnBsrfUFgMam-334" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-337" value="Call the explain() function of the question object" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" parent="1" vertex="1">
-          <mxGeometry x="610.14" y="3100" width="120" height="60" as="geometry" />
+          <mxGeometry x="613.69" y="3121" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-343" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="5EhukW0RqnBsrfUFgMam-341" target="5EhukW0RqnBsrfUFgMam-342" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-341" value="explain(self)" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;arcSize=50;" parent="1" vertex="1">
-          <mxGeometry x="1622.5" y="2380" width="150" height="60" as="geometry" />
+          <mxGeometry x="1887.5" y="2380" width="150" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-370" value="True" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="5EhukW0RqnBsrfUFgMam-342" target="5EhukW0RqnBsrfUFgMam-345" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -1021,112 +1021,112 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-342" value="explanation variable of self is empty" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1657.5" y="2475" width="80" height="80" as="geometry" />
+          <mxGeometry x="1922.5" y="2475" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-344" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;" parent="1" source="5EhukW0RqnBsrfUFgMam-345" target="5EhukW0RqnBsrfUFgMam-355" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1697.5" y="2555" as="targetPoint" />
+            <mxPoint x="1962.5" y="2555" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-345" value="Get api key from the api_key.txt file" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;labelBackgroundColor=none;" parent="1" vertex="1">
-          <mxGeometry x="1636.25" y="2610" width="122.5" height="70" as="geometry" />
+          <mxGeometry x="1901.25" y="2610" width="122.5" height="70" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-355" value="Create gemini request asking how to solve question_text variable of self and user_answer variable of self" style="whiteSpace=wrap;html=1;labelBackgroundColor=none;" parent="1" vertex="1">
-          <mxGeometry x="1637.5" y="2715" width="120" height="100" as="geometry" />
+          <mxGeometry x="1902.5" y="2715" width="120" height="100" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-369" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="5EhukW0RqnBsrfUFgMam-360" target="5EhukW0RqnBsrfUFgMam-368" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-360" value="Convert gemini response to text" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" parent="1" vertex="1">
-          <mxGeometry x="1637.5" y="2840" width="120" height="60" as="geometry" />
+          <mxGeometry x="1902.5" y="2840" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-362" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="5EhukW0RqnBsrfUFgMam-355" target="5EhukW0RqnBsrfUFgMam-360" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1697.5" y="2815" as="sourcePoint" />
-            <mxPoint x="1697.5" y="2840" as="targetPoint" />
+            <mxPoint x="1962.5" y="2815" as="sourcePoint" />
+            <mxPoint x="1962.5" y="2840" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-372" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="5EhukW0RqnBsrfUFgMam-368" target="5EhukW0RqnBsrfUFgMam-371" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-368" value="Display &quot;Explanation:&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=0;labelBackgroundColor=none;" parent="1" vertex="1">
-          <mxGeometry x="1637.5" y="3020" width="120" height="60" as="geometry" />
+          <mxGeometry x="1902.5" y="3020" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-375" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="5EhukW0RqnBsrfUFgMam-371" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1697.5" y="3240" as="targetPoint" />
+            <mxPoint x="1962.5" y="3240" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-371" value="Display the gemini response within a box&amp;nbsp;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=0;labelBackgroundColor=none;" parent="1" vertex="1">
-          <mxGeometry x="1637.5" y="3120" width="120" height="60" as="geometry" />
+          <mxGeometry x="1902.5" y="3120" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-374" value="Save gemini response to explanation variable of self" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" parent="1" vertex="1">
-          <mxGeometry x="1638.75" y="2930" width="120" height="60" as="geometry" />
+          <mxGeometry x="1903.75" y="2930" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-382" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="5EhukW0RqnBsrfUFgMam-378" target="5EhukW0RqnBsrfUFgMam-381" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-378" value="Display that an explanation has already been generated" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
-          <mxGeometry x="1845" y="2485" width="120" height="60" as="geometry" />
+          <mxGeometry x="2110" y="2485" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-383" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="5EhukW0RqnBsrfUFgMam-381" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="1905" y="3270" />
+              <mxPoint x="2170" y="3270" />
             </Array>
-            <mxPoint x="1757.5000000000005" y="3270" as="targetPoint" />
+            <mxPoint x="2022.5000000000005" y="3270" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="5EhukW0RqnBsrfUFgMam-381" value="Display the value of the explanation variable of self within a box" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
-          <mxGeometry x="1845" y="2625" width="120" height="60" as="geometry" />
+          <mxGeometry x="2110" y="2625" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="pomaQXtchL_S_8z3-I5B-1" value="END clear_screen()" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;arcSize=50;" parent="1" vertex="1">
-          <mxGeometry x="1200" y="590" width="120" height="60" as="geometry" />
+          <mxGeometry x="1285" y="550" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="pomaQXtchL_S_8z3-I5B-2" value="Save quiz object to file &quot;quiz.pkl&quot; using the pickle library" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="755.7" y="780" width="120" height="60" as="geometry" />
+          <mxGeometry x="730.4200000000001" y="735" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="pomaQXtchL_S_8z3-I5B-3" value="Load quiz object from quiz file" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="228.82999999999998" y="350" width="120" height="60" as="geometry" />
+          <mxGeometry x="203.54999999999998" y="305" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="pomaQXtchL_S_8z3-I5B-4" value="Read api key from the api_key.txt file" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1660" y="170" width="120" height="60" as="geometry" />
+          <mxGeometry x="1745" y="130" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="pomaQXtchL_S_8z3-I5B-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="pomaQXtchL_S_8z3-I5B-5" target="pomaQXtchL_S_8z3-I5B-7" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="pomaQXtchL_S_8z3-I5B-5" value="RETURN the list of formated_questions from the format() function" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1660" y="900" width="120" height="60" as="geometry" />
+          <mxGeometry x="1745" y="860" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="pomaQXtchL_S_8z3-I5B-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="pomaQXtchL_S_8z3-I5B-6" target="pomaQXtchL_S_8z3-I5B-7" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="pomaQXtchL_S_8z3-I5B-6" value="Return False" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1450" y="730" width="120" height="60" as="geometry" />
+          <mxGeometry x="1535" y="690" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="pomaQXtchL_S_8z3-I5B-7" value="END create_quiz(number, prompt)" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;arcSize=50;" parent="1" vertex="1">
-          <mxGeometry x="1540" y="1000" width="120" height="60" as="geometry" />
+          <mxGeometry x="1625" y="960" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="pomaQXtchL_S_8z3-I5B-10" value="END Quiz.format(self)" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;arcSize=50;" parent="1" vertex="1">
-          <mxGeometry x="1940" y="760" width="120" height="60" as="geometry" />
+          <mxGeometry x="2025" y="720" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="TJUkzF9d9tyzJdKfze_w-1" value="END display_quiz(questions)" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;arcSize=50;" parent="1" vertex="1">
-          <mxGeometry x="189.9999999999999" y="2680" width="210" height="60" as="geometry" />
+          <mxGeometry x="193.5499999999999" y="2701" width="210" height="60" as="geometry" />
         </mxCell>
         <mxCell id="TJUkzF9d9tyzJdKfze_w-2" value="END get_question_answer(self)" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;arcSize=50;" parent="1" vertex="1">
-          <mxGeometry x="1010" y="2500" width="210" height="60" as="geometry" />
+          <mxGeometry x="1352.36" y="2915" width="210" height="60" as="geometry" />
         </mxCell>
         <mxCell id="TJUkzF9d9tyzJdKfze_w-5" value="END explain(self)" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;arcSize=50;" parent="1" vertex="1">
-          <mxGeometry x="1607.5" y="3240" width="150" height="60" as="geometry" />
+          <mxGeometry x="1872.5" y="3240" width="150" height="60" as="geometry" />
         </mxCell>
         <mxCell id="TJUkzF9d9tyzJdKfze_w-6" value="END is_correct_answer(self)" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;arcSize=50;" parent="1" vertex="1">
-          <mxGeometry x="1535" y="1940" width="170" height="60" as="geometry" />
+          <mxGeometry x="1817.5" y="1987.5" width="170" height="60" as="geometry" />
         </mxCell>
         <mxCell id="TJUkzF9d9tyzJdKfze_w-9" value="END update_quiz(quiz)" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;arcSize=50;" parent="1" vertex="1">
-          <mxGeometry x="1380" y="2415" width="210" height="60" as="geometry" />
+          <mxGeometry x="1662.5" y="2462.5" width="210" height="60" as="geometry" />
         </mxCell>
         <mxCell id="TJUkzF9d9tyzJdKfze_w-10" value="END print(self)" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;arcSize=50;" parent="1" vertex="1">
-          <mxGeometry x="1800" y="2300" width="210" height="60" as="geometry" />
+          <mxGeometry x="2065" y="2290" width="210" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
