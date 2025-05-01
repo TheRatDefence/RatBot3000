@@ -4,12 +4,13 @@ import os
 from pydantic import BaseModel
 from pydantic import Field
 import pickle
+import textwrap
 
 class Quiz(BaseModel):                                                # The quiz object/class which is used by gemini to create a structured output
     quiz_prompt: str = Field(description="The prompt used to generate the quiz")
-    class Question(BaseModel):
-        class Answer(BaseModel):
-            class Letter(enum.Enum):
+    class Question(BaseModel): # Question object/class used by gemini
+        class Answer(BaseModel): # Answer object/class used by gemini
+            class Letter(enum.Enum): # Letter enum object/class used by gemini
                 A = "A"
                 B = "B"
                 C = "C"
@@ -27,11 +28,11 @@ class Quiz(BaseModel):                                                # The quiz
     class FormatedQuestion:                                            # The class used to generate usable questions from the quiz object
         counter = 0
         def __init__(self, pre_question):
-            self.wrong_answers = {}
-            self.right_answer = {}
-            self.answers = {}
-            self.question_text = pre_question.question
-            self.user_answer = ''
+            self.wrong_answers = {} # Dict of all wrong answers
+            self.right_answer = {} # Dict of all right answers (just 1)
+            self.answers = {} # Dict of all answers
+            self.question_text = pre_question.question.replace('\n', '') # The question text that is being asked of the user
+            self.user_answer = '' # The string
             self.number = Quiz.FormatedQuestion.counter
             self.explanation = ''
             
@@ -51,6 +52,7 @@ class Quiz(BaseModel):                                                # The quiz
         def print(self):                                                # Function for printing out each question
             boxed_text("", True)
             boxed_text(" ", False)
+            width = os.get_terminal_size().columns
             boxed_text(f"[Q{self.number + 1}] {self.question_text}...", False)
             boxed_text(" ", False)
 
@@ -104,10 +106,9 @@ class Quiz(BaseModel):                                                # The quiz
                 response = client.models.generate_content(
                     model="gemini-2.0-flash",
                     contents=f"Explain how to solve the following question: {self.question_text} and where the user might have gone wrong with their answer: {self.user_answer}, also ensure that if any sentence goes over {width/2} characters, it is split into multiple lines. "
-                              f" Keep the explanation short and simple, and do not use any latex or unicode characters that cannot be printed to a"
-                              f" terminal and do not use markdown. The maximum length of text on one line should be {width/2} characters. Ensure that "
-                              f"the quiz and questions help the user learn and achieve at least one of these outcomes: {extention_math_outcomes} "
-                              f"Make sure that the outcome name is also included in the question to help the user identify the outcome they were learning.",
+                              f" Keep the explanation short and simple, and do not use any latex or unicode characters that cannot be printed to a terminal and do not use markdown."
+                              f" Ensure the quiz and questions help the user learn and achieve at least one of these outcomes: {extention_math_outcomes} "
+                              f" Make sure that the outcome name is also included in the question to help the user identify the outcome they were learning.",
                 )
 
                 self.explanation = response.text
@@ -115,9 +116,7 @@ class Quiz(BaseModel):                                                # The quiz
 
                 boxed_text("", True)
                 boxed_text(" ", False)
-                for line in self.explanation.splitlines():
-                    boxed_text(line, False)
-
+                boxed_text(self.explanation, False)
                 boxed_text(" ", False)
                 boxed_text("", True)
 
@@ -168,8 +167,6 @@ def create_quiz(number: int, prompt: str):                                # The 
 
     print("\t[I] Generating quiz...")
 
-    width = os.get_terminal_size().columns
-
     extention_math_outcomes = """Objective Students:  develop efficient strategies to solve problems using pattern recognition, generalisation, proof and modelling techniques 
     Year 10 Mathematics Extension 1 outcomes A student:
     ME10-1 uses algebraic and graphical concepts in the modelling and solving of problems involving functions and their inverses
@@ -208,8 +205,7 @@ def create_quiz(number: int, prompt: str):                                # The 
                      f"The questions must follow the A B C D structure and be sensible choices. "
                      f"Ensure that there is only 1 correct answer and that it is correct. "
                      f"Do not display the math questions in latex, only unicode characters that can be printed to a terminal"
-                     f"also ensure that if any sentence goes over {width/2} characters, it is split into multiple lines, the maximum"
-                     f"length of a line is {width/2} characters. Ensure that the quiz and questions help the user learn and achieve at least one of these outcomes: {extention_math_outcomes} "
+                     f"Ensure that the quiz and questions help the user learn and achieve at least one of these outcomes: {extention_math_outcomes} "
                      f"Make sure that the outcome name is also included in the question to help the user identify the outcome they were learning.",
             config={
                 'response_mime_type': 'application/json',
@@ -251,13 +247,17 @@ def clear_screen():                                                       # Util
         print(welcometext.center(width,"#"))
         print("#" * width + "\n" + "#" * width + "\n" + "-" * width + '\n' *  2)
 
+
 def boxed_text(text: str, line: bool):                                    # Utility function for printing out the text in a box
     width = os.get_terminal_size().columns
     hwidth = int(width / 2)
     qwidth = int(hwidth / 2)
-
     if not line:
-        print(" " * qwidth + "|" + text.center(hwidth - 2, " ") + "|" + " " * qwidth)
+        for text_line in textwrap.wrap(text, width=hwidth - 2, break_on_hyphens=True):
+            if text_line != "\n":
+                print(" " * qwidth + "|" + text_line.center(hwidth - 2, " ") + "|" + " " * qwidth)
+            else:
+                print(" " * qwidth + "|" + ("#" * (width - 2)) + "|" + " " * qwidth)
     if line:
         print(" " * qwidth + "-" * hwidth + " " * qwidth)
 
@@ -338,3 +338,5 @@ if __name__=="__main__":
             exit()
 
     exit()
+
+
